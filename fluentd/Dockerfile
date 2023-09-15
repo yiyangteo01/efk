@@ -8,7 +8,7 @@ USER root
 RUN apk add --no-cache --update --virtual .build-deps \
         sudo build-base ruby-dev \
 && gem uninstall -I elasticsearch \
-&& gem install elasticsearch ${STACK_VERSION} \
+&& gem install elasticsearch -v ${STACK_VERSION} \
 && sudo gem install fluent-plugin-elasticsearch \
 && sudo gem sources --clear-all \
 && apk del .build-deps \
