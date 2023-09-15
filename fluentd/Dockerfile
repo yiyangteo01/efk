@@ -1,5 +1,5 @@
 # image based on fluentd v1.14-1
-FROM fluentd:v1.14-1
+FROM fluentd:v1.16.2
 
 # Use root account to use apk
 USER root
