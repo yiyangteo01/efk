@@ -29,7 +29,7 @@ services:
 
 # Created using the Docker image kibana:8.9.2
   kibana:
-    image: docker.elastic.co/kibana/kibana:${STACK_VERSION}
+    image: docker.elastic.co/kibana/kibana:8.10.0-1
     links: # Links kibana service to the elasticsearch container
       - elasticsearch
     depends_on:
